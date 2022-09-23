@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form class="form-container" action="">
+      <h3>Sign Up</h3>
+      <div>
+        <label for="">Username:</label>
+        <input id="username" type="username" required />
+        <p class="errormsg" id="nameerrormsg">
+          Username must be between 3 and 25 characters.
+        </p>
+      </div>
+      <div>
+        <label for="">Email:</label> <input id="email" type="email" required />
+        <p class="errormsg" id="emailerrormsg">Please enter valid email.</p>
+      </div>
+      <div class="pass">
+        <label for="">Password:</label>
+        <input id="password" type="password" required />
+        <p class="errormsg" id="passworderrormsg">
+          Password must has at least eight characters that include 1 lowercase
+          character, 1 uppercase character, 1 number, and 1 special character in
+          (!@#$%^&*)
+        </p>
+        <img
+          id="togglePassword"
+          src="https://img.icons8.com/material-two-tone/24/000000/hide.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <label for="">Confirm Password:</label>
+        <input id="confirm-password" type="password" required />
+        <p class="errormsg" id="cpassworderrormsg">
+          Please enter password again.
+        </p>
+      </div>
+
+      <button id="submit" type="submit">SIGN UP</button>
+    </form>
+    <div class="signup-popup">
+      You are signed up.
+      <i class="close">❌</i>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
