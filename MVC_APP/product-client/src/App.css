@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #E01A76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  overflow-x: hidden;
+  background: rgb(251,251,251);
+}
+
+.container {
+  width: 100vw;
+  height: 100%;
+  
+}
+.App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background: blue; */
+}
+
+#heading {
+  margin: 10px 0;
+  padding: 0;
+}
+
+.card-wrapper {
+  width: 80vw;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  width: 350px;
+  height: 400px;
+  /* background: yellow; */
+  margin: auto;
+  text-align: center;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.img-container {
+  width: 100%;
+  height: 60%;
+  border-radius: 5px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.card-info-container {
+  padding: 10px;
+  text-align: center;
+  background: rgb(176, 128, 232);
+  color: white;
+}
+
+.card-name {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  color: black;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  margin: 0;
+  padding: 7px;
+}
+
+@media screen and (max-width: 600px) {
+  .card-container {
+    height: 300px;
+  }
+  .card-info-container p {
+    padding: 0;
+  }
+
+  .card-wrapper {
+    width: 90%;
+  }
+}
+
+/* filterbar */
+
+#filterbar-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 400px;
+  margin: 20px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+#filterbar-heading{
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+.filterbar-options{
+  display:flex;
+justify-content: space-between;
+}
+.filterbar-options button {
+  margin: 0 5px;
+  padding: 5px;
+  font-size: 20px;
+  border-radius:5px ;
+  border: 0px;
+  background: transparent;
+}
+/* Filter card */
+
+.filter-container {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: rgb(2555,255,255);
+  top: 10%;
+}
+
+.filter-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+
+}
+.filter-name {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.filter-type {
+flex:1;
+
+}
+.filter-type p {
+  font-size: 25px;
+  margin-bottom: 10px;
+  background: hsl(210, 14%, 42%);
+  color: white;
+}
+
+.filter-option {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  align-items: flex-start;
+  height: 300px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* hide scrollbar but still scroll  */
+.filter-option::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-option input {
+  margin-right: 30px;
+}
+.filter-option label {
+  margin: 10px;
+  font-size:20px;
+  width: 90%;
+  padding: 5px;
+}
+
+#filter-buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.secondary-button {
+  padding: 8px;
+  color: white;
+  font-size: 20px;
+  background: rgb(37, 104, 123);
+  border: none;
+  margin: 20px 30px;
+  border-radius: 5px;
+
+}
+.close{
+  display: none;
+}
+
+.pagination-wrapper {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+#prev , #current-page {
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#price-input-container {
+  text-align: center;
+  display: flex;
+  width: 100%;
+}
+
+#price-input-container input {
+  margin:0;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+input:focus,input:active {
+  outline: none;
+}
